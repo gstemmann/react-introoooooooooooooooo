@@ -3,14 +3,19 @@
 
 
 
-
-const App = () => (
+const Blue = (props) => {
+    console.log(props)
+    return (
         <div>
-            <Blue name="This is blue" />
+            <h1>Blue</h1>
+            <p>{props.name}</p>
         </div>
+    
     )
+}
 
-    ReactDOM.render(<App />, document.getElementById("root"))
+
+
 
 
 // const root = ReactDOM.render.createRoot(document.getElementById('root'));
